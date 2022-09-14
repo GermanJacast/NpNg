@@ -1,0 +1,105 @@
+.container-imc {
+  width: 100%;
+  height: 100vh;
+  padding: 6% 0;
+}
+.container-imc h2 {
+  font-size: 3em;
+  color: var(--light-color);
+}
+.container-imc span {
+  font-size: 1em;
+  color: var(--secondary-color);
+}
+.container-imc .content-imc {
+  width: 50%;
+  margin: auto;
+  height: 100%;
+  color: var(--light-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content-imc form {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content-imc form label {
+  padding: 2% 0;
+}
+.content-imc form input {
+  width: 90%;
+  margin: 2% auto;
+  padding: 2%;
+  outline: none;
+  border-radius: 6px;
+}
+.content-imc form input:focus {
+  border: 1px solid var(--secondary-color);
+}
+.content-imc form button {
+  width: 30%;
+  margin: 2% auto;
+  padding: 2%;
+  border: none;
+  transition: 0.4s;
+  font-weight: 700;
+  border-radius: 6px;
+}
+.content-imc form button:hover {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  text-shadow: 1px 1px 1px var(--dark-color);
+}
+.content-imc .content-bmi {
+  margin: 4%;
+  padding: 2%;
+  width: 100%;
+  height: auto;
+}
+.content-imc .content-bmi h3 {
+  font-size: 1.5em;
+}
+.content-bmi .bmi {
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 10%;
+  margin: 4% auto;
+  width: 100px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bmi span {
+  font-size: 2em;
+}
+.imc-blue {
+  color: blue;
+}
+.imc-blue span {
+  color: blue;
+}
+.imc-green {
+  color: green;
+}
+.imc-green span {
+  color: green;
+}
+.imc-yellow {
+  color: yellow;
+}
+.imc-yellow span {
+  color: yellow;
+}
+.imc-red {
+  color: red;
+}
+.imc-red span {
+  color: red;
+}
