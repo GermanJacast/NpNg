@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/NpNg/static/css/main.95c3ed8e.css",
+    "main.js": "/NpNg/static/js/main.cc37e682.js",
+    "static/js/787.3699a619.chunk.js": "/NpNg/static/js/787.3699a619.chunk.js",
+    "static/media/BackHome.jpg": "/NpNg/static/media/BackHome.ea68f5de8eaaf281cffa.jpg",
+    "static/media/Logo-NpNg.png": "/NpNg/static/media/Logo-NpNg.326e09f05e8bd00ee1bb.png",
+    "static/media/about-gallery02.jpg": "/NpNg/static/media/about-gallery02.7d0ff39caa1d70994c87.jpg",
+    "static/media/about-gallery01.jpg": "/NpNg/static/media/about-gallery01.51a0cbd0a74a78ae15e5.jpg",
+    "static/media/why-join.jpg": "/NpNg/static/media/why-join.28bf069940a1aa670bc6.jpg",
+    "static/media/about-gallery03.jpg": "/NpNg/static/media/about-gallery03.85a1fee913f2fe5f29f9.jpg",
+    "static/media/about-gallery04.jpg": "/NpNg/static/media/about-gallery04.729bb57af78e87ce3c43.jpg",
+    "index.html": "/NpNg/index.html",
+    "main.95c3ed8e.css.map": "/NpNg/static/css/main.95c3ed8e.css.map",
+    "main.cc37e682.js.map": "/NpNg/static/js/main.cc37e682.js.map",
+    "787.3699a619.chunk.js.map": "/NpNg/static/js/787.3699a619.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95c3ed8e.css",
+    "static/js/main.cc37e682.js"
+  ]
+}
