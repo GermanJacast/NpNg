@@ -90,3 +90,16 @@ hr {
   margin: auto;
   background-color: var(--secondary-color);
 }
+
+/*  */
+.blk {
+  background-color: var(--dark-color);
+}
+.zero {
+  opacity: 0;
+  transform: scale(0.7);
+}
+.one {
+  opacity: 1;
+  transition: 1s;
+}

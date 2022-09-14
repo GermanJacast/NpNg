@@ -8,8 +8,44 @@ import Imc from './Imc';
 import Contact from './Contact';
 import Why from './Why';
 import { NavLink } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
 
 export const Home = () => {
+
+  const elementRef = useRef();
+  const elementRefOne = useRef();
+  const elementRefTwo = useRef();
+  const elementRefThree = useRef();
+  const elementRefFour = useRef();
+  const elementRefFive = useRef();
+
+  useEffect(() =>{
+    const change = (entries) => {
+      entries.forEach((entrie) =>{
+        if(entrie.isIntersecting){
+          entrie.target.className = 'one'
+          observer.disconnect();
+        }
+      });
+    };
+    let options = {
+      root: null,
+      rootMargin: '200px 0px 600px 0px',
+      threshold: 1.0
+    };
+    const observer = new IntersectionObserver(change, options);
+    observer.observe(elementRef.current);
+    observer.observe(elementRefOne.current);
+    observer.observe(elementRefTwo.current);
+    observer.observe(elementRefThree.current);
+    observer.observe(elementRefFour.current);
+    observer.observe(elementRefFive.current);
+
+    return () => {
+      observer.disconnect();
+    };
+  });
+
   return (
     <div>
       <div className='container-home'>
@@ -37,23 +73,40 @@ export const Home = () => {
       </div>
 
       {/* About */}
-      <About />
+      <div ref={elementRef} className='zero'>
+        <About />
+      </div>
       {/* Why */}
       <hr />
-      <Why />
+      <div className='blk'>
+        <div ref={elementRefOne} className='zero'>
+          <Why />
+        </div>
+      </div>
       {/* Plans */}
       <hr />
-      <Plans />
+      <div ref={elementRefTwo} className='zero'>
+        <Plans />
+      </div>
       {/*  */}
       <hr />
-      <Schedule />
+      <div className='blk'>
+        <div ref={elementRefThree} className='zero'>
+          <Schedule />
+        </div>
+      </div>
       {/* IMC */}
       <hr />
-      <Imc />
+      <div ref={elementRefFour} className='zero'>
+        <Imc />
+      </div>
       {/* Contact */}
       <hr />
-      <Contact />
-      
+      <div className='blk'>
+        <div ref={elementRefFive} className='zero'>
+          <Contact />
+        </div>
+      </div>
     </div>
   );
 };
