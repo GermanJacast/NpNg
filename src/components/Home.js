@@ -88,7 +88,7 @@ export const Home = () => {
       <div ref={elementRefTwo} className='zero'>
         <Plans />
       </div>
-      {/*  */}
+      {/* Schedule */}
       <hr />
       <div className='blk'>
         <div ref={elementRefThree} className='zero'>

@@ -3,12 +3,12 @@ import { useState } from 'react';
 import { BiDownArrow } from "react-icons/bi";
 
 export const Schedule = () => {
-  const [stateMonday, changeStateMonday] = useState(false);
-  const [stateTuesday, changeStateTuesday] = useState(false);
-  const [stateWednesday, changeStateWednesday] = useState(false);
-  const [stateThursday, changeStateThursday] = useState(false);
-  const [stateFriday, changeStateFriday] = useState(false);
-  const [stateSaturday, changeStateSaturday] = useState(false);
+  const [stateMonday, changeStateMonday] = useState(true);
+  const [stateTuesday, changeStateTuesday] = useState(true);
+  const [stateWednesday, changeStateWednesday] = useState(true);
+  const [stateThursday, changeStateThursday] = useState(true);
+  const [stateFriday, changeStateFriday] = useState(true);
+  const [stateSaturday, changeStateSaturday] = useState(true);
   return (
     <div className='container-schedule'>
       <h2>Nuestras<span> clases</span></h2>
