@@ -93,6 +93,9 @@
     flex-wrap: wrap;
     height: auto;
   }
+  .container-about .text {
+    padding: 6%;
+  }
   .container-about .text p {
     margin: 0;
   }

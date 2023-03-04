@@ -165,6 +165,9 @@
     border: none;
     padding: 2%;
   }
+  .contact h3 {
+    padding: 6%;
+  }
   .form form label {
     width: 46%;
     margin: 2%;
