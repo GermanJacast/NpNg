@@ -160,6 +160,9 @@
     width: 46%;
     margin: 2% 0%;
   }
+  .information .content:nth-child(3) {
+    width: 90%;
+  }
   .contact .form {
     width: 100%;
     border: none;
