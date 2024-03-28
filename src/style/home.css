@@ -6,7 +6,9 @@
 .container-home .background-home img {
   width: 100%;
   height: 100vh;
+  filter: opacity(0.2);
 }
+/*  */
 .container-home .text {
   width: 50%;
   margin: auto;
@@ -16,46 +18,49 @@
   transform: translate(-50%, -50%);
 }
 .container-home .text h1 {
+  /* 4.6em */
+  font-size: 2.4em;
   color: var(--secondary-color);
-  font-size: 2.2em;
 }
 .container-home .text h2 {
+  font-size: 3.4em;
   color: var(--light-color);
-  font-size: 3em;
 }
 .container-home .text p {
-  color: var(--light-color);
-  font-size: 1.5em;
+  font-size: 1.7em;
   font-weight: 600;
+  color: var(--light-color);
+  line-height: 1.4em;
 }
 .container-home .text p span {
-  color: var(--secondary-color);
-  font-weight: bold;
   font-size: 1em;
+  font-weight: bold;
+  color: var(--secondary-color);
 }
 .container-home .text .link {
-  margin: 6%;
+  margin: 6% auto;
 }
 .container-home .text .link a {
-  color: var(--light-color);
+  font-size: 1.4em;
+  font-weight: bold;
   text-decoration: none;
-  background-color: var(--secondary-color);
+  color: var(--light-color);
   padding: 2% 6%;
   border-radius: 16px;
-  font-size: 1.5em;
-  font-weight: bold;
+  background-color: var(--secondary-color);
   transition: 0.8s;
 }
 .container-home .text .link a:hover {
-  background-color: var(--light-color);
   color: var(--secondary-color);
+  background-color: var(--light-color);
   transition: 0.8s;
+  text-shadow: none;
 }
 .text h1,
 .text h2,
 .text p,
 .text .link a {
-  text-shadow: 1px 1px 2px var(--dark-color);
+  text-shadow: 3px 1px 2px var(--dark-color);
   margin: 1%;
 }
 .container-home .logo img {
@@ -69,37 +74,34 @@
 
 /* Media */
 @media (max-width: 800px) {
-  .container-home .text {
-    width: 80%;
-  }
   .container-home .logo img {
     display: none;
+  }
+  .container-home .text {
+    width: 80%;
   }
   .container-home .text .link {
     margin: 8%;
   }
+  .container-home .text h1 {
+    font-size: 2em;
+  }
+  .container-home .text h2 {
+    font-size: 2.4em;
+  }
+  .container-home .text p {
+    font-size: 1.4em;
+  }
   .container-home .text .link a {
-    padding: 3% 9%;
+    font-size: 1.6em;
+    padding: 4% 8%;
   }
 }
 
-/* hr */
-hr {
-  height: 1px;
-  width: 90%;
-  margin: auto;
-  background-color: var(--secondary-color);
-}
-
 /*  */
-.blk {
+.bkg-primary {
   background-color: var(--dark-color);
 }
-.zero {
-  opacity: 0;
-  transform: scale(0.7);
-}
-.one {
-  opacity: 1;
-  transition: 1s;
+.bkg-secondary {
+  background-color: var(--secondary-color);
 }

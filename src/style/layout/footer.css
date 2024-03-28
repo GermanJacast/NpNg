@@ -1,0 +1,238 @@
+.container-contact {
+  height: 100vh;
+  width: 100%;
+  /* background-color: var(--dark-color); */
+}
+.container-contact .contact {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.contact h4 {
+  font-size: 2em;
+  padding: 2%;
+  color: var(--light-color);
+}
+.contact span {
+  font-size: 1em;
+  color: var(--secondary-color);
+}
+
+/* Information */
+.contact .info {
+  width: 45%;
+  height: 70%;
+  margin: 2%;
+  padding: 2%;
+  border-left: 1px solid var(--secondary-color);
+}
+.info .information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  flex-direction: column;
+  padding: 4% 0;
+}
+.information .content {
+  width: 100%;
+  margin: 0 0 4% 0;
+  text-align: left;
+  color: var(--light-color);
+}
+.information .content:last-child {
+  width: 100%;
+}
+.information .content h5 {
+  font-size: 1.8em;
+  margin: 0 0 2% 0;
+}
+.information .content p {
+  font-size: 1.7em;
+}
+.information .content a {
+  font-size: 1.7em;
+  color: var(--light-color);
+  text-decoration: none;
+  transition: 0.6s;
+}
+.information .content a:hover {
+  color: var(--secondary-color);
+}
+
+/* Form */
+.contact .form {
+  width: 45%;
+  height: 70%;
+  margin: 2%;
+  padding: 2%;
+  border-right: 1px solid var(--secondary-color);
+}
+.form form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 4% 0;
+}
+.form form label {
+  width: 48%;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: left;
+  color: var(--light-color);
+}
+.form form label:nth-last-child(2) {
+  width: 100%;
+}
+.form form input {
+  width: 96%;
+  display: block;
+  padding: 4% 2%;
+  margin: 4% 0;
+  outline: 4px solid transparent;
+  border: none;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1em;
+}
+.form form textarea {
+  width: 96%;
+  min-height: auto;
+  resize: none;
+  margin: 2% 0;
+  padding: 4% 2%;
+  outline: none;
+  border: none;
+  border-radius: 16px;
+  font-weight: 600;
+  font-size: 1em;
+}
+.form form input:focus,
+.form form textarea:focus {
+  transition: 0.6s;
+  outline: 4px solid var(--secondary-color);
+  /* border: 1px solid var(--tertiary-color); */
+}
+.form form input:hover,
+.form form textarea:hover {
+  outline: 4px solid var(--secondary-color);
+  animation: input-pulse 0.6s infinite;
+}
+.form form input:hover:focus,
+.form form textarea:hover:focus {
+  animation: none;
+}
+.form form input[type="submit"] {
+  width: 40%;
+  padding: 2% 4%;
+  font-weight: 700;
+  transition: 0.6s;
+  cursor: pointer;
+  outline: none;
+  margin: auto;
+  border: none;
+  font-size: 1.4em;
+  background-color: var(--light-color);
+}
+.form form input[type="submit"]:hover {
+  color: var(--light-color);
+  background-color: var(--secondary-color);
+  text-shadow: 1px 1px 1px var(--dark-color);
+}
+/* Input keyframe */
+@keyframes input-pulse {
+  0% {
+    outline-offset: -0.1em;
+  }
+  10% {
+    outline-offset: 0;
+  }
+  50% {
+    outline-offset: 0.1em;
+  }
+  100% {
+    outline-offset: 0;
+  }
+}
+
+/* Social */
+.container-contact .social {
+  width: 90%;
+  margin: auto;
+}
+.social .icon {
+  font-size: 2em;
+  margin: 0 2%;
+  color: var(--light-color);
+  transition: 0.6s;
+  cursor: pointer;
+}
+.social .icon:hover {
+  color: var(--secondary-color);
+  animation: pulse 0.6s infinite;
+}
+/* Keyframe */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(1.4);
+  }
+  50% {
+    transform: scale(1);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Media */
+@media (max-width: 800px) {
+  .container-contact {
+    min-height: 100vh;
+    height: auto;
+  }
+  .container-contact .contact {
+    flex-direction: column;
+    padding: 2%;
+    margin: 2% auto;
+    border-right: 1px solid var(--secondary-color);
+    border-left: 1px solid var(--secondary-color);
+  }
+  .contact .info {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .contact .form {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .form form input[type="submit"] {
+    width: 60%;
+  }
+  .contact h4 {
+    font-size: 1.8em;
+  }
+  .information .content h5 {
+    font-size: 1.6em;
+  }
+  .information .content p {
+    font-size: 1.4em;
+  }
+  .information .content a {
+    font-size: 1.4em;
+  }
+  .form form label {
+    font-size: 1.4em;
+  }
+}

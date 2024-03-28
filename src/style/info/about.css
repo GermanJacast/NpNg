@@ -1,0 +1,110 @@
+.container-about {
+  width: 100%;
+  height: 100vh;
+}
+/*  */
+.container-about .content-about {
+  width: 92%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*  */
+.content-about .text {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-about .text h2 {
+  color: var(--light-color);
+  font-size: 3.4em;
+}
+.content-about .text b {
+  color: var(--secondary-color);
+  font-size: 1em;
+}
+.content-about .text p {
+  color: var(--light-color);
+  font-size: 1.7em;
+  font-weight: 600;
+  text-align: left;
+  padding: 4%;
+  line-height: 1.4em;
+}
+.content-about .text b {
+  color: var(--secondary-color);
+  font-size: 1em;
+}
+
+/* Gallery */
+.content-about .gallery-about {
+  width: 45%;
+  height: 100%;
+}
+/*  */
+.gallery-about .content-gallery {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.content-gallery .secondary {
+  width: 100%;
+  height: 50%;
+  position: relative;
+}
+.content-gallery .secondary img {
+  height: 50vh;
+  padding: 4%;
+  border-radius: 6px;
+}
+.content-gallery .secondary .slick-dots {
+  position: absolute;
+  bottom: -2%;
+}
+.content-gallery .secondary .slick-dots li button::before {
+  color: var(--light-color);
+  opacity: 1;
+}
+.content-gallery .secondary .slick-dots li.slick-active button::before {
+  color: var(--secondary-color);
+}
+
+/* Media */
+@media (max-width: 800px) {
+  .container-about {
+    min-height: 100vh;
+    height: auto;
+  }
+  .container-about .content-about {
+    flex-direction: column;
+    padding: 4% 0;
+  }
+  /*  */
+  .content-about .text {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  .content-about .text h2 {
+    font-size: 2.4em;
+  }
+  .content-about .text p {
+    font-size: 1.4em;
+    padding: 4% 0;
+  }
+  /* Gallery */
+  .content-about .gallery-about {
+    width: 90%;
+    height: auto;
+  }
+  .content-gallery .secondary img {
+    padding: 4% 0;
+  }
+  /*  */
+}

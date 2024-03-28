@@ -1,0 +1,432 @@
+.container-page-about {
+  width: 100%;
+}
+/*  */
+.container-page-about h2 {
+  font-size: 3.4em;
+  color: var(--light-color);
+}
+.container-page-about h3 {
+  font-size: 2.2em;
+  color: var(--light-color);
+}
+.container-page-about p {
+  font-size: 1.7em;
+  color: var(--light-color);
+}
+.container-page-about b {
+  font-size: 1em;
+  color: var(--secondary-color);
+}
+/* Media */
+@media (max-width: 800px) {
+  .container-page-about h2 {
+    font-size: 2.4em;
+  }
+  .container-page-about h3 {
+    font-size: 1.7em;
+  }
+  .container-page-about p {
+    font-size: 1.4em;
+  }
+}
+
+/* Welcome */
+.container-page-about .about-welcome {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--dark-color);
+}
+.about-welcome .welcome-image {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.about-welcome img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.about-welcome .welcome-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.welcome-text .container-text {
+  width: 30%;
+  margin: 8%;
+}
+.welcome-text .container-text h2 {
+  padding: 1% 4%;
+  background-color: var(--dark-color);
+  /* clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%); */
+  box-shadow: 0px 2px 1px var(--secondary-color);
+  border-radius: 6px 6px 0 0;
+}
+.welcome-text .container-text p {
+  margin: 4% 0 0 0;
+  padding: 1% 4%;
+  font-weight: bold;
+  line-height: 1.4em;
+  background-color: var(--secondary-color);
+  /* clip-path: polygon(0% 0, 100% 0%, 90% 100%, 0% 100%); */
+  /* -2px? */
+  box-shadow: 0px 2px 1px var(--light-color);
+  border-radius: 0 0 6px 6px;
+}
+.welcome-text P:nth-child(2) {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  box-shadow: 0px 2px 1px var(--dark-color);
+  border-radius: 0px;
+}
+.about-welcome .welcome-arrow-down {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+  height: 40%;
+  width: 2.2em;
+}
+.welcome-arrow-down .arrow-down {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-arrow-down span:first-child:before {
+  content: "";
+  width: 10%;
+  height: 90%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  background-color: var(--light-color);
+  box-shadow: 1px 1px 0 var(--dark-color);
+  animation: welcome-arrow 2s infinite;
+}
+.welcome-arrow-down span:nth-child(2) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  color: var(--light-color);
+  display: block;
+  animation: welcome-change-color 2s infinite;
+}
+.welcome-arrow-down span:nth-child(2) svg {
+  font-size: 2.2em;
+  filter: drop-shadow(1px 1px 0 var(--dark-color));
+}
+/*  */
+@keyframes welcome-arrow {
+  0% {
+    height: 0%;
+  }
+  60% {
+    background-color: var(--light-color);
+  }
+  100% {
+    height: 94%;
+    background-color: var(--secondary-color);
+  }
+}
+@keyframes welcome-change-color {
+  0% {
+    color: var(--light-color);
+  }
+  60% {
+    color: var(--light-color);
+  }
+  100% {
+    color: var(--secondary-color);
+  }
+}
+/* Media */
+@media (max-width: 800px) {
+  .about-welcome img {
+    object-fit: cover;
+  }
+  .welcome-text .container-text {
+    width: 70%;
+    margin: auto;
+  }
+  .about-welcome .welcome-arrow-down {
+    height: 20%;
+  }
+  .welcome-arrow-down span:first-child:before {
+    top: -8%;
+  }
+}
+
+/* Discover */
+.container-page-about .discover {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--dark-color);
+}
+.discover .content-discover {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-discover .discover-image {
+  width: 40%;
+  height: 60vh;
+  padding: 4% 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.discover-image img {
+  width: 90%;
+  height: 100%;
+  outline: 2px solid var(--secondary-color);
+  border: 4px solid var(--dark-color);
+  border-radius: 50%;
+}
+.content-discover .discover-text {
+  width: 60%;
+  padding: 4% 0;
+  z-index: 2;
+}
+.discover-text p {
+  width: fit-content;
+  text-align: start;
+  margin: 1% auto;
+  color: var(--dark-color);
+  font-weight: 600;
+  padding: 1%;
+  background-color: var(--light-color);
+}
+.discover-text .discover-dude {
+  width: 100%;
+  margin-top: 2%;
+}
+.discover-dude p,
+.discover-dude a {
+  width: 100%;
+  text-align: center;
+  padding: 1% 0;
+}
+.discover-dude p {
+  /* 1.7 */
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--secondary-color);
+  background-color: transparent;
+  margin: 4% 0;
+}
+.discover-dude a {
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: 700;
+  background-color: var(--secondary-color);
+  padding: 2%;
+  border-radius: 16px;
+  color: var(--light-color);
+  transition: 0.6s;
+}
+.discover-dude a:hover {
+  background-color: var(--light-color);
+  color: var(--secondary-color);
+}
+@media (max-width: 1000px) {
+  .discover-image img {
+    width: 300px;
+    height: 300px;
+  }
+}
+@media (max-width: 800px) {
+  .discover .content-discover {
+    flex-direction: column;
+    padding: 2% 0;
+  }
+  .content-discover .discover-image {
+    width: 100%;
+    height: auto;
+    padding: 4% 0;
+  }
+  .content-discover .discover-text {
+    width: 100%;
+    padding: 0 0 4%;
+  }
+  .discover-dude p {
+    /* 2.2 */
+    font-size: 1.7em;
+  }
+}
+
+/* Mission */
+.container-page-about .mission {
+  width: 100%;
+  min-height: 60vh;
+  padding: 4% 0;
+  background-color: var(--secondary-color);
+}
+.mission h3 {
+  width: 90%;
+  margin: 0 auto 2%;
+}
+.mission .our-mission {
+  width: 90%;
+  min-height: 50vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.our-mission .mission-content {
+  width: 26%;
+  min-height: 100%;
+  padding: 2%;
+  outline: 1px dashed var(--light-color);
+  transition: 0.6s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mission-content i svg {
+  font-size: 4em;
+  transition: 0.6s;
+}
+.mission-content h4 {
+  font-size: 1.8em;
+  margin: 4% 0;
+  text-transform: uppercase;
+  transition: 0.6s;
+}
+.mission-content:hover {
+  background-color: var(--light-color);
+  outline-style: solid;
+}
+.mission-content:hover i,
+.mission-content:hover h4 {
+  color: var(--secondary-color);
+}
+.mission-content:hover p {
+  color: var(--dark-color);
+}
+/*  */
+@media (max-width: 800px) {
+  .container-page-about .mission {
+    min-height: 90vh;
+  }
+  .mission .our-mission {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .our-mission .mission-content {
+    width: 40%;
+    margin: 1% 0;
+  }
+}
+@media (max-width: 500px) {
+  .our-mission .mission-content {
+    width: 80%;
+  }
+}
+
+/* Experience */
+.container-page-about .experience {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--dark-color);
+}
+.experience .content-experience {
+  width: 90%;
+  height: 100%;
+  padding: 4%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.content-experience h3 {
+  width: 100%;
+  color: var(--secondary-color);
+  margin-bottom: 2%;
+}
+.content-experience .experience-point {
+  width: 50%;
+  text-align: left;
+}
+.experience-point .content-experience-point {
+  width: 100%;
+  margin: 4% 0;
+  transition: 0.6s;
+}
+.content-experience-point h4,
+.content-experience-point p {
+  color: var(--light-color);
+  transition: 0.6s;
+}
+.content-experience-point p {
+  line-height: 1.4em;
+}
+.content-experience-point:hover p {
+  color: var(--tertiary-color);
+}
+.content-experience-point h4 {
+  font-size: 1.8em;
+  margin-bottom: 2%;
+}
+.content-experience-point:hover h4 {
+  color: var(--secondary-color);
+}
+.content-experience-point li {
+  color: var(--secondary-color);
+  transition: 0.6s;
+}
+.content-experience-point:hover li {
+  color: var(--light-color);
+}
+.content-experience .experience-gallery {
+  width: 40%;
+  height: 50%;
+}
+.experience-gallery img {
+  width: 100%;
+  height: 400px;
+}
+/*  */
+@media (max-width: 800px) {
+  .content-experience .experience-point {
+    width: 90%;
+  }
+  .content-experience .experience-gallery {
+    width: 90%;
+  }
+}
+
+/* success */
+.container-page-about .success {
+  width: 100%;
+  min-height: 40vh;
+  background-color: var(--secondary-color);
+}
+.success .content-success {
+  width: 90%;
+  height: 100%;
+  padding: 4%;
+  margin: auto;
+}
+.content-success h3 {
+  margin-bottom: 2%;
+}
+.content-success b {
+  color: var(--primary-color);
+  font-weight: bold;
+}
