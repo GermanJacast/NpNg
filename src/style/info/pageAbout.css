@@ -360,54 +360,65 @@
   margin-bottom: 2%;
 }
 .content-experience .experience-point {
-  width: 50%;
+  width: 100%;
   text-align: left;
+  /*  */
 }
 .experience-point .content-experience-point {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 4% 0;
   transition: 0.6s;
 }
-.content-experience-point h4,
-.content-experience-point p {
+.content-experience-point .content-experience-point-text{
+  width: 40%;
+  padding: 0 2%;
+}
+.content-experience-point-text h4,
+.content-experience-point-text p {
   color: var(--light-color);
   transition: 0.6s;
 }
-.content-experience-point p {
+.content-experience-point-text p {
   line-height: 1.4em;
 }
-.content-experience-point:hover p {
+.content-experience-point-text:hover p {
   color: var(--tertiary-color);
 }
-.content-experience-point h4 {
+.content-experience-point-text h4 {
   font-size: 1.8em;
   margin-bottom: 2%;
 }
-.content-experience-point:hover h4 {
+.content-experience-point-text:hover h4 {
   color: var(--secondary-color);
 }
-.content-experience-point li {
+.content-experience-point-text li {
   color: var(--secondary-color);
   transition: 0.6s;
 }
-.content-experience-point:hover li {
+.content-experience-point-text:hover li {
   color: var(--light-color);
 }
-.content-experience .experience-gallery {
-  width: 40%;
-  height: 50%;
+.content-experience-point .content-experience-image{
+  width: 50%;
+  padding: 0 2%;
 }
-.experience-gallery img {
+.content-experience-point .content-experience-image img{
   width: 100%;
-  height: 400px;
+}
+.content-experience-point:nth-child(2) .content-experience-point-text{
+  order: 1;
 }
 /*  */
 @media (max-width: 800px) {
-  .content-experience .experience-point {
-    width: 90%;
+  .experience-point .content-experience-point {
+    display: block;
   }
-  .content-experience .experience-gallery {
-    width: 90%;
+  .content-experience-point .content-experience-point-text,
+  .content-experience-point .content-experience-image{
+    width: 100%;
+    padding: 2% 0;
   }
 }
 

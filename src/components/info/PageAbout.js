@@ -107,6 +107,7 @@ const PageAbout = () => {
           <h3>Experiencia de Entrenamiento Única</h3>
           <div className="experience-point">
             <div className="content-experience-point">
+              <div className="content-experience-point-text">
               <h4>Personalización Total</h4>
               <ul>
                 <li>
@@ -127,7 +128,7 @@ const PageAbout = () => {
                   </p>
                 </li>
               </ul>
-            </div>
+              </div>
             <div className="content-experience-image">
               <img
                 src={egallery01}
@@ -136,7 +137,10 @@ const PageAbout = () => {
                 title="Maquinas de gimnasio"
               />
             </div>
+            </div>
+
             <div className="content-experience-point">
+            <div className="content-experience-point-text">
               <h4>Variedad y Emoción</h4>
               <ul>
                 <li>
@@ -161,7 +165,10 @@ const PageAbout = () => {
                 title="Maquinas de gimnasio"
               />
             </div>
+            </div>
+            
             <div className="content-experience-point">
+            <div className="content-experience-point-text">
               <h4>Cada Gota Cuenta</h4>
               <ul>
                 <li>
@@ -185,6 +192,8 @@ const PageAbout = () => {
                 title="Maquinas de gimnasio"
               />
             </div>
+            </div>
+            
           </div>
         </div>
       </div>
