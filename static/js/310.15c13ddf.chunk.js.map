@@ -1,0 +1,1 @@
+{"version":3,"file":"static/js/310.15c13ddf.chunk.js","mappings":"6JAMA,EAJgB,WACd,OAAO,gBAAKA,UAAU,qBACvB,C","sources":["components/misc/Contact.js"],"sourcesContent":["import \"../../style/misc/contact.css\";\r\n\r\nconst Contact = () => {\r\n  return <div className=\"container-contact\"></div>;\r\n};\r\n\r\nexport default Contact;\r\n"],"names":["className"],"sourceRoot":""}
