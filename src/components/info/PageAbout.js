@@ -12,6 +12,8 @@ import discover from "../../img/about/about-page/about-page-02.webp";
 import egallery01 from "../../img/about/about-page/about-page-03.webp";
 import egallery02 from "../../img/about/about-page/about-page-04.webp";
 import egallery03 from "../../img/about/about-page/about-page-05.webp";
+import Logo from "../icons/Logo";
+
 
 // import About from "./About";
 
@@ -23,17 +25,19 @@ const PageAbout = () => {
           <img
             src={welcome}
             loading="lazy"
-            alt="Hombre empujando trineo con peso"
-            title="Hombre empujando trineo con peso"
+            alt="dos personas en un gimnasio"
+            title="Maquinas de gimnasio"
           />
         </div>
         <div className="welcome-text">
           <div className="container-text">
-            <h2>
-              <b>No Pain No Gain</b>
-            </h2>
-            <p>Donde la fuerza se encuentra con la dedicación</p>
-            <p>Y cada paso te acerca a la mejor versión de ti mismo.</p>
+            <div className="left-text">
+                <Logo/>
+            </div>
+            <div className="right-text">
+              <p>Donde la fuerza se encuentra con la dedicación</p>
+              <p>Y cada paso te acerca a la mejor versión de ti mismo.</p>
+            </div>
           </div>
         </div>
         <div className="welcome-arrow-down">

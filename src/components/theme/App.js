@@ -17,7 +17,7 @@ function App() {
     const handleVisibilityChange = () => {
       //  Condición si la pagina no esta visible y si no se encuentra en primer plano
       if (document.hidden && document.visibilityState !== "visible") {
-        // console.log("not visible");
+        console.log("not visible");
         setComeBackMessage();
       } else {
         // console.log("visible");
@@ -52,7 +52,7 @@ function App() {
       let pageTitle = "NpNg";
       // Busca la ruta en el array de configuración
       const matchedRoute = routesConfig.find(
-        (route) => route.path === pathname
+        (route) => route.path === pathname,
       );
       // Verificar si la ruta existe antes de actualizar el título
       if (matchedRoute) {

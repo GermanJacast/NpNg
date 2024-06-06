@@ -20,25 +20,11 @@
   align-items: center;
   flex-direction: column;
 }
-.content-about .text h2 {
-  color: var(--light-color);
-  font-size: 3.4em;
-}
-.content-about .text b {
-  color: var(--secondary-color);
-  font-size: 1em;
-}
 .content-about .text p {
-  color: var(--light-color);
-  font-size: 1.7em;
   font-weight: 600;
   text-align: left;
   padding: 4%;
   line-height: 1.4em;
-}
-.content-about .text b {
-  color: var(--secondary-color);
-  font-size: 1em;
 }
 
 /* Gallery */
@@ -91,11 +77,7 @@
     height: auto;
     margin: auto;
   }
-  .content-about .text h2 {
-    font-size: 2.4em;
-  }
   .content-about .text p {
-    font-size: 1.4em;
     padding: 4% 0;
   }
   /* Gallery */

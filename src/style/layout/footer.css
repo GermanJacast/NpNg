@@ -12,13 +12,7 @@
   margin: auto;
 }
 .contact h4 {
-  font-size: 2em;
   padding: 2%;
-  color: var(--light-color);
-}
-.contact span {
-  font-size: 1em;
-  color: var(--secondary-color);
 }
 
 /* Information */
@@ -46,15 +40,10 @@
   width: 100%;
 }
 .information .content h5 {
-  font-size: 1.8em;
   margin: 0 0 2% 0;
-}
-.information .content p {
-  font-size: 1.7em;
 }
 .information .content a {
   font-size: 1.7em;
-  color: var(--light-color);
   text-decoration: none;
   transition: 0.6s;
 }
@@ -219,15 +208,6 @@
   }
   .form form input[type="submit"] {
     width: 60%;
-  }
-  .contact h4 {
-    font-size: 1.8em;
-  }
-  .information .content h5 {
-    font-size: 1.6em;
-  }
-  .information .content p {
-    font-size: 1.4em;
   }
   .information .content a {
     font-size: 1.4em;

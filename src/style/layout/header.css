@@ -20,10 +20,8 @@
   text-align: center;
 }
 .navigation-nav ul li a {
-  color: var(--light-color);
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.4em;
   filter: drop-shadow(1px 1px 0 var(--tertiary-color));
   transition: 0.6s;
 }
@@ -130,7 +128,12 @@
     display: block;
   }
   .menu .navigation-nav {
-    display: none;
+    /* display: none; */
+    opacity: 0;
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    transition: .6s;
   }
   .active-menu ~ body {
     overflow: hidden;
@@ -142,7 +145,8 @@
     transition: 0.6s;
   }
   .active-menu ~ .navigation-nav {
-    display: block;
+    opacity: 1;
+    /* display: block; */
     position: fixed;
     top: 11%;
     width: 100%;
@@ -164,13 +168,15 @@
   .navigation-nav ul li {
     width: 90%;
     height: 100%;
+    position: relative;
     margin: auto;
     padding: 2%;
     text-align: left;
     background-color: var(--secondary-color);
-    border-bottom: 4px groove var(--secondary-color);
+    outline: 4px groove var(--secondary-color);
     display: flex;
     align-items: center;
+    transition: .6s;
   }
   .navigation-nav ul li:nth-child(1) {
     border-radius: 16px 16px 0 0;
@@ -179,8 +185,27 @@
     border-radius: 0 0 16px 16px;
     border-bottom: none;
   }
+  .navigation-nav ul li::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: .6s;
+  }
+  .navigation-nav ul li:hover::before{
+    width: 100%;
+  }
+  .navigation-nav ul li:nth-child(1)::before {
+    border-radius: 16px 16px 0 0;
+  }
+  .navigation-nav ul li:nth-last-of-type(1)::before {
+    border-radius: 0 0 16px 16px;
+  }
   .navigation-nav ul li a {
-    font-size: 1.6em;
+    width: 100%;
   }
   .navigation-nav ul li:hover a {
     font-size: 1.66em;
